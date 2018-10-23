@@ -1,2 +1,8 @@
 # Proyecto-Taller-de-Sofware-Free-ClassRoom-
-Aplicación para buscar salones disponibles
+
+Programa para buscar salones disponibles
+
+## Integrantes:
+* Flores Cuenca, Luis Fernando
+* Rivera Acacio Shamil
+* Quispe Hurtado Juan Pablo
