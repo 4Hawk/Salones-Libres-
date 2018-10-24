@@ -23,5 +23,6 @@ else:
         "3.-Reportar o Revisar objetos perdidos \n"))
         if(opcion==1):
             campus = input(" En qué campus desea buscar salones")
+            print("Avanzen")
             
       
