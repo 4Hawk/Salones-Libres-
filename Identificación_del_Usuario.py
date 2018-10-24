@@ -1,7 +1,9 @@
                             # Preguntar al Usuario - Codigo y Contraseña
 from Base_de_Datos import datos1
 
+
                 # Verificación del Usuario
+           
 codigo = int(input(" Ingrese su código de Estudiante-----> "))
 validar = codigo in datos1
 while(validar==False):
@@ -21,4 +23,5 @@ else:
         "3.-Reportar o Revisar objetos perdidos \n"))
         if(opcion==1):
             campus = input(" En qué campus desea buscar salones")
+            
       
