@@ -1,6 +1,6 @@
                             # Preguntar al Usuario - Codigo y Contraseña
 from Base_de_Datos import datos1
-
+from Base_de_Datos import Campus
 
                 # Verificación del Usuario
            
@@ -18,11 +18,24 @@ else:
         print(" Bienvenido(a) a FreeClassRoom")
         # Creando la Lista de Opciones
         opcion = int(input(" Ingrese una Opción \n"+
-        "1.-Buscar salones Disponibles \n" +
+        "1-Buscar salones Disponibles \n" +
         "2.-Buscar Asesorías Disponibles \n"+
         "3.-Reportar o Revisar objetos perdidos \n"))
         if(opcion==1):
-            campus = input(" En qué campus desea buscar salones")
-            print("Avanzen")
+            campus = int(input(" En qué campus desea buscar salones \n" +
+            "1.-Campus 1 \n"+
+            "2.-Campus 2 \n"))
+            if(campus==1):
+                pabellon=int(input("Ingrese el pabellon \n"+
+                "1-A \n" +
+                "2.-B \n"+
+                "3.-C \n"))
+                #salon=campus[campus][pabellon]
+                
+                print(Campus[campus][pabellon])
+
+        elif(opcion==2):
+            curso=input(" Que curso desea reforzar")
             
+
       
