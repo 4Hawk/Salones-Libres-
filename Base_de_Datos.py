@@ -17,6 +17,3 @@ datosC7 = []
 #Base de datos de campus
 Campus=[[],[0,405,504],[0,302,106,307,503,102],[0,302,205,304,104,302]]
 
-aleatorio = new random(5)
-
-print (aleatorio)

@@ -25,7 +25,8 @@ else:
         if(opcion==1):
             campus = int(input(" En qué campus desea buscar salones \n" +
             "1.-Campus 1 \n"+
-            "2.-Campus 2 \n"))
+            "2.-Campus 2 \n"+
+            "3.- Campus 7\n"))
             if(campus==1):
                 pabellon=int(input("Ingrese el pabellon \n"+
                 "1-A \n" +
