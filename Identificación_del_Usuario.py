@@ -16,6 +16,7 @@ else:
         contraseña = input(" Ingrese su contraseña-------> ") 
     else:
         print(" Bienvenido(a) a FreeClassRoom")
+
         # Creando la Lista de Opciones
         opcion = int(input(" Ingrese una Opción \n"+
         "1-Buscar salones Disponibles \n" +
@@ -30,9 +31,22 @@ else:
                 "1-A \n" +
                 "2.-B \n"+
                 "3.-C \n"))
-                #salon=campus[campus][pabellon]
-                
                 print(Campus[campus][pabellon])
+
+            if(campus == 2):
+                pabellon = int(input("Ingrese el pabellon \n"+
+                "1-A \n" +
+                "2.-B \n"+
+                "3.-C \n"))
+                print(Campus[campus][pabellon])
+
+            if(campus == 3):
+                pabellon = int(input("Ingrese el pabellon \n"+
+                "1-A \n" +
+                "2.-B \n"+
+                "3.-C \n"))
+                print(Campus[campus][pabellon])
+
 
         elif(opcion==2):
             curso=input(" Que curso desea reforzar")
