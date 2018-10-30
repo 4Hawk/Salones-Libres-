@@ -29,3 +29,11 @@ obj_perd1 = ["laptop","cargador samsung negro","tomatodo verde","audifonos beats
 obj_perd2 = ["cargador apple","cartuchera cars"]
 #Campus 7
 obj_perd7 = ["audifonos","usb negro","celular apple","ipad"]
+
+#Base de datos de cursos disponibles
+#Campus1
+cursos_disp1 = ["lenguaje","matematica","fisica"]
+#Campus2
+cursos_disp2 = ["ingles","fisica"]
+#Campus7
+cursos_disp7 = ["arquitectura","estadistica"]
