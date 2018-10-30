@@ -13,12 +13,19 @@ datos1 = {1811854:"JavierIn34",17035465:"MariaRojas123",16042341:"Peru123",
 
 #Base de datos de campus
                 #  Base de Datos de los Salones Disponibles
-#             A       B      C
+#             A                 B          C
 salones =[[[105,205,309],[201,305,412],[402,504]],   # Campus 1
 
-#   A       B        C
-[[308,209,103],[503,310,207],[203,304,409]],           # Campus 2
+#   A                 B             C
+[[308,209,103],[503,310,207],[203,304,409]],          # Campus 2
 
 #      A             B       C
-[[123,101,204,205],[504],[506,403]]] # Campus 7
+[[123,101,204,205],[504],[506,403]]]                  # Campus 7
 
+#Base de datos de objetos perdidos por Campus
+#Campus 1
+obj_perd1 = ["laptop","cargador samsung negro","tomatodo verde","audifonos beats"]
+#Campus 2
+obj_perd2 = ["cargador apple","cartuchera cars"]
+#Campus 7
+obj_perd7 = ["audifonos","usb negro","celular apple","ipad"]
