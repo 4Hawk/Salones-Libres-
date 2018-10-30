@@ -1,4 +1,4 @@
-import random
+
 
 # Base de Datos para Identificación del Usuario
  
@@ -10,10 +10,15 @@ datos1 = {1811854:"JavierIn34",17035465:"MariaRojas123",16042341:"Peru123",
 # C2 = A - B - C      Pabellones
 # C = A - B -        Pabellones
 
-datosC1 = [101,102,103,104,105,106,107]
-datosC2 = []
-datosC7 = []
 
 #Base de datos de campus
-Campus=[[],[0,405,504],[0,302,106,307,503,102],[0,302,205,304,104,302]]
+                #  Base de Datos de los Salones Disponibles
+#             A       B      C
+salones =[[[105,205,309],[201,305,412],[402,504]],   # Campus 1
+
+#   A       B        C
+[[308,209,103],[503,310,207],[203,304,409]],           # Campus 2
+
+#      A             B       C
+[[123,101,204,205],[504],[506,403]]] # Campus 7
 
