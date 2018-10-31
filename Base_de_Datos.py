@@ -34,6 +34,6 @@ obj_perd7 = ["audifonos","usb negro","celular apple","ipad"]
 #Campus1
 cursos_disp1 = ["lenguaje","matematica","fisica"]
 #Campus2
-cursos_disp2 = ["ingles","fisica"]
+cursos_disp2 = ["ingles","castellano"]
 #Campus7
 cursos_disp7 = ["arquitectura","estadistica"]

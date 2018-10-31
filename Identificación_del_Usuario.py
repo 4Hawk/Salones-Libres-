@@ -1,7 +1,12 @@
                             # Preguntar al Usuario - Codigo y Contraseña
 from Base_de_Datos import datos1
 from Base_de_Datos import salones
+from Base_de_Datos import cursos_disp1
+from Base_de_Datos import cursos_disp2
+from Base_de_Datos import cursos_disp7
+
 from Funciones import Buscador
+
 
                 # Verificación del Usuario
            
@@ -62,7 +67,19 @@ else:
 
 
         elif(opcion==2):
-            curso=input(" Que curso desea reforzar")
+            curso=input("Que curso desea reforzar ?   ")
+            validbusque = curso in cursos_disp1
+            if(validbusque == True):
+                print("Curso disponible solo en: Campus 1 ")
+            validbusque = curso in cursos_disp2
+            if(validbusque == True):
+                print("Curso disponible solo en: Campus 2 ")     
+            validbusque = curso in cursos_disp7
+            if(validbusque == True ):
+                print("Curso disponible solo en: Campus 7 ")
+            else:
+                print("Curso no disponible por el momento")
+
             
 
       
