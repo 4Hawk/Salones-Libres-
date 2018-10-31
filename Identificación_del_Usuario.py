@@ -10,10 +10,10 @@ from Funciones import Buscador
 
                 # Verificación del Usuario
            
-codigo = int(input(" Ingrese su código de Estudiante-----> "))
+codigo = input(" Ingrese su código de Estudiante-----> ")
 validar = codigo in datos1
 while(validar==False):
-    codigo = int(input(" Ingrese su código de Estudiante------> "))
+    codigo = input(" Ingrese su código de Estudiante------> ")
     validar = codigo in datos1
 else:
     obtain = datos1.get(codigo)
