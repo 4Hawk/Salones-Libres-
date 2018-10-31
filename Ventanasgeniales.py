@@ -38,7 +38,7 @@ class LoginFrame(Frame):
         obtaincontra = datos1.get(username)
         
         if validarcod == True and password==obtaincontra:
-            # Ventana de Opciones
+            # Ventana de Opciones Num1
             ventana2=Tk()
             ventana2.geometry("550x450+500+250")
             root.destroy()
