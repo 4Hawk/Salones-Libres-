@@ -118,20 +118,10 @@ def Asesorias():
                                 Regresar()
 
 # Funcion Buscar Objetos Perdidos
-def Objetos():
-        p=int(input("3.-Reportar objeto perdido \n"+
-                "4.-Ver objetos encontrados \n"))
-        if(p==3):
-                f = open('objetos.txt','a')
-                p=str(input("Reportar objeto perdido: "))
-                f.writelines('\n'+p)
-                f.close()
 
-        elif(p==4):
-                f = open('objetos.txt','r')
-                mensaje = f.read()
-                print(mensaje)
-                f.close
+def Objetos():
+        
+        # Aqui copia y pega tu parte Luis Fernando
 
                                         # Funciones de Soporte
 
