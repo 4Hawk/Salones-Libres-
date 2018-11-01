@@ -119,7 +119,25 @@ def Asesorias():
 
 # Funcion Buscar Objetos Perdidos
 
+
 def Objetos():
+        print("Objetos Perdidos: \n")
+        p=int(input("1.-Reportar objeto perdido \n"+
+        "2.-Ver objetos encontrados \n"))
+        if(p==1):
+                f = open('objetos.txt','a')
+                p=str(input("Reportar objeto perdido: "))
+                f.writelines('\n'+p)
+                f.close()
+                Regresar()
+
+        elif(p==2):
+                f = open('objetos.txt','r')
+                mensaje = f.read()
+                print(mensaje)
+                f.close
+                Regresar()
+                
         
         # Aqui copia y pega tu parte Luis Fernando
 

@@ -31,17 +31,9 @@ obj_perd2 = ["cargador apple","cartuchera cars"]
 #Campus 7
 obj_perd7 = ["audifonos","usb negro","celular apple","ipad"]
 
-#Base de datos de cursos disponibles
-#Campus1
-#cursos_disp1 = {{{"Juan Carlos Perez":"Lenguaje"}:{"Horarios":"-C1403(3.00pm) \n -C1204(1.00pm) \n -C1405(10.00am)"}},
-#"lenguaje","matematica","fisica"}
-#Campus2
-cursos_disp2 = ["ingles","castellano"]
-#Campus7
-cursos_disp7 = ["arquitectura","estadistica"]
 
-                                    
-                                    
+
+                                                             
                                     # Base de Datos de Asesorías Disponibles
 
 #Campus1
