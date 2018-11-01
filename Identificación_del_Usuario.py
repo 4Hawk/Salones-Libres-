@@ -4,8 +4,8 @@ from Base_de_Datos import salones
 from Base_de_Datos import cursos_disp1
 from Base_de_Datos import cursos_disp2
 from Base_de_Datos import cursos_disp7
-
-from Funciones import Buscador
+# Funciones Importadas
+from Funciones import *
 
 
                 # Verificación del Usuario
@@ -39,29 +39,17 @@ else:
 
             # Observación: Aquí podemos quitar las opciones multiples y usar solamente la función(No si se desean hacerlo)
             if(campus==1):
-                pabellon=int(input("Ingrese el pabellon \n"+
-                "1-A \n" +
-                "2.-B \n"+
-                "3.-C \n"+
-                " Ingrese la opción -----> "))
+                pabellon = Pabellon()
+                print("Los salones disponibles son:")
+                Buscador(salones,campus,pabellon)
+                
+            elif(campus == 2):
+                pabellon = Pabellon()
                 print("Los salones disponibles son:")
                 Buscador(salones,campus,pabellon)
 
-            if(campus == 2):
-                pabellon = int(input("Ingrese el pabellon \n"+
-                "1-A \n" +
-                "2.-B \n"+
-                "3.-C \n"+
-                " Ingrese la opción -----> "))
-                print("Los salones disponibles son:")
-                Buscador(salones,campus,pabellon)
-
-            if(campus == 3):
-                pabellon = int(input("Ingrese el pabellon \n"+
-                "1-A \n" +
-                "2.-B \n"+
-                "3.-C \n"+
-                " Ingrese la opción -----> "))
+            elif(campus == 3):
+                pabellon = Pabellon()
                 print("Los salones disponibles son:")
                 Buscador(salones,campus,pabellon)
 
