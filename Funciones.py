@@ -7,16 +7,16 @@ from Base_de_Datos import *
 
 def Todo():
         print("                     INICIAR SESIÓN" )           
-        codigo = input(" Ingrese su código de Estudiante-----> ")
+        codigo = input(" Ingrese su código de Estudiante-----> ").strip()
         validar = codigo in datos1
         while(validar==False):
-                codigo = input(" Ingrese su código de Estudiante------> ")
+                codigo = input(" Ingrese su código de Estudiante------> ").strip()
                 validar = codigo in datos1
         else:
                 obtain = datos1.get(codigo)
-                contraseña = input(" Ingrese su contraseña------> ") 
+                contraseña = input(" Ingrese su contraseña------> ").strip()
                 while(obtain!=contraseña):
-                        contraseña = input(" Ingrese su contraseña-------> ") 
+                        contraseña = input(" Ingrese su contraseña-------> ").strip()
                 else:
                         ListadeOpciones(salones,cursos,cursos_disp1,cursos_disp2,cursos_disp3)
 
