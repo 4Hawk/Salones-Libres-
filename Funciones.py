@@ -25,25 +25,29 @@ def Todo():
 
 
 def ListadeOpciones(salones,cursos,cursos_disp1,cursos_disp2,cursos_disp3):
-        print("\n -------------------- Bienvenido(a) a FreeClassRoom ----------------------- \n")
-        opcion = input(" \n ¿ Qué desea hacer ? \n\n"+
-        "1.-Buscar salones Disponibles \n" +
-        "2.-Buscar Asesorías Disponibles \n"+
-        "3.-Reportar objetos encontrados y/o Revisar objetos perdidos \n"+
-        "4.-Salir \n"+
-        " Ingrese la opción----->")
-        if(opcion=="1"):
-                Buscarsalones()
-                # Asesorías Disponibles
-        elif(opcion=="2"):
-                Asesorias()
-        elif(opcion=="3"):
-                Objetos()
-        elif(opcion=="4"):
-                Salir()
-        else:
+        try:
+                print("\n -------------------- Bienvenido(a) a FreeClassRoom ----------------------- \n")
+                opcion = input(" \n ¿ Qué desea hacer ? \n\n"+
+                "1.-Buscar salones Disponibles \n" +
+                "2.-Buscar Asesorías Disponibles \n"+
+                "3.-Reportar objetos encontrados y/o Revisar objetos perdidos \n"+
+                "4.-Salir \n"+
+                " Ingrese la opción----->")
+                if(opcion=="1"):
+                        Buscarsalones()
+                        # Asesorías Disponibles
+                elif(opcion=="2"):
+                        Asesorias()
+                elif(opcion=="3"):
+                        Objetos()
+                elif(opcion=="4"):
+                        Salir()
+                else:
+                        print("\n <<<<<<  La opción es Incorrecta  >>>>> \n")  
+                        ListadeOpciones(salones,cursos,cursos_disp1,cursos_disp2,cursos_disp3)  
+        except(ValueError):
                 print("\n <<<<<<  La opción es Incorrecta  >>>>> \n")  
-                ListadeOpciones(salones,cursos,cursos_disp1,cursos_disp2,cursos_disp3)  
+                ListadeOpciones(salones,cursos,cursos_disp1,cursos_disp2,cursos_disp3) 
 
 
                                                 # Funciones Cola
@@ -147,7 +151,7 @@ def Objetos():
                         f.close
                         Regresar()
         except(ValueError):
-                print(" <<<<<<<<< Opción Incorrecta >>>>>>>> ")
+                print(" \n <<<<<<<<< Opción Incorrecta >>>>>>>> ")
                 Objetos()
                 
         
@@ -159,12 +163,15 @@ def Objetos():
 # Función para regresar al Menú Principal
 
 def Regresar():
-        volver = int(input(" \n Desea regresar al Menú principal \n 1.-Si \n 2.-No \n Ingrese la opción----->"))
-        if(volver == 1):
-                return ListadeOpciones(salones,cursos,cursos_disp1,cursos_disp2,cursos_disp3)
-        else:
-                print("\n ***********************Agradecemos su visita********************** ")
-
+        try:
+                volver = int(input(" \n Desea regresar al Menú principal \n 1.-Si \n 2.-No \n Ingrese la opción----->"))
+                if(volver == 1):
+                        return ListadeOpciones(salones,cursos,cursos_disp1,cursos_disp2,cursos_disp3)
+                else:
+                        print("\n ***********************Agradecemos su visita********************** ")
+        except(ValueError):
+                print("\n  <<<<<<< Opción Incorrecta  >>>>>>>")
+                Regresar()
 # Función para salir de la Aplicación
 def Salir():
         print("\n ***************** Gracias por su Visita ***************** ")
@@ -177,17 +184,22 @@ def Buscador(lista,campus,pabellon):
 
 # Función para obtener pabellon  indexada a (Funcion Buscarsalones)           
 def Pabellon():
-        global pabellon
-        pabellon = int(input(" \n Ingrese el pabellon \n\n"+
-                "1-A \n" +
-                "2.-B \n"+
-                "3.-C \n"+
-                " Ingrese la opción -----> "))
-        if(pabellon==1 or pabellon==2 or pabellon==3):
-                return pabellon
-        else:
+        try:
+                global pabellon
+                pabellon = int(input(" \n Ingrese el pabellon \n\n"+
+                        "1-A \n" +
+                        "2.-B \n"+
+                        "3.-C \n"+
+                        " Ingrese la opción -----> "))
+                if(pabellon==1 or pabellon==2 or pabellon==3):
+                        return pabellon
+                else:
+                        print("\n <<<<<<  La opción es Incorrecta  >>>>> \n")
+                        return Pabellon()
+        except(ValueError):
                 print("\n <<<<<<  La opción es Incorrecta  >>>>> \n")
                 return Pabellon()
+
                 
 # Funcion Buscar Cursos Campus indexada a (Funcion Buscarsalones)
 
