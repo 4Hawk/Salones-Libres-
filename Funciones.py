@@ -26,20 +26,20 @@ def Todo():
 
 def ListadeOpciones(salones,cursos,cursos_disp1,cursos_disp2,cursos_disp3):
         print("\n -------------------- Bienvenido(a) a FreeClassRoom ----------------------- \n")
-        opcion = int(input(" \n ¿ Qué desea hacer ? \n\n"+
+        opcion = input(" \n ¿ Qué desea hacer ? \n\n"+
         "1.-Buscar salones Disponibles \n" +
         "2.-Buscar Asesorías Disponibles \n"+
         "3.-Reportar objetos encontrados y/o Revisar objetos perdidos \n"+
         "4.-Salir \n"+
-        " Ingrese la opción----->"))
-        if(opcion==1):
+        " Ingrese la opción----->")
+        if(opcion=="1"):
                 Buscarsalones()
                 # Asesorías Disponibles
-        elif(opcion==2):
+        elif(opcion=="2"):
                 Asesorias()
-        elif(opcion==3):
+        elif(opcion=="3"):
                 Objetos()
-        elif(opcion==4):
+        elif(opcion=="4"):
                 Salir()
         else:
                 print("\n <<<<<<  La opción es Incorrecta  >>>>> \n")  
@@ -51,36 +51,40 @@ def ListadeOpciones(salones,cursos,cursos_disp1,cursos_disp2,cursos_disp3):
 
 # Función para Buscar Salones
 def Buscarsalones():
-        campus = int(input("  \n En qué campus desea buscar salones \n" +
-                "1.-Campus 1 \n"+
-                "2.-Campus 2 \n"+
-                "3.-Campus 7\n"+
-                "4.-Volver al Menú \n"+
-                "5.-Salir \n"+
-                " Ingrese la opción  ----->"))
+        try:
+                campus = int(input("  \n En qué campus desea buscar salones \n" +
+                        "1.-Campus 1 \n"+
+                        "2.-Campus 2 \n"+
+                        "3.-Campus 7\n"+
+                        "4.-Volver al Menú \n"+
+                        "5.-Salir \n"+
+                        " Ingrese la opción  ----->"))
 
-        if(campus==1):
-                pabellon = Pabellon()
-                print("\n Los salones disponibles son:")
-                Buscador(salones,campus,pabellon)
-                Regresar()
-                                
-        elif(campus == 2):
-                pabellon = Pabellon()
-                print("\n Los salones disponibles son:")
-                Buscador(salones,campus,pabellon)
-                Regresar()
+                if(campus==1):
+                        pabellon = Pabellon()
+                        print("\n Los salones disponibles son:")
+                        Buscador(salones,campus,pabellon)
+                        Regresar()
+                                        
+                elif(campus == 2):
+                        pabellon = Pabellon()
+                        print("\n Los salones disponibles son:")
+                        Buscador(salones,campus,pabellon)
+                        Regresar()
 
-        elif(campus == 3):
-                pabellon = Pabellon()
-                print("\n Los salones disponibles son:")
-                Buscador(salones,campus,pabellon)
-                Regresar()
-        elif(campus==4):
-                ListadeOpciones(salones,cursos,cursos_disp1,cursos_disp2,cursos_disp3)
-        elif(campus==5):
-                Salir()
-        else:
+                elif(campus == 3):
+                        pabellon = Pabellon()
+                        print("\n Los salones disponibles son:")
+                        Buscador(salones,campus,pabellon)
+                        Regresar()
+                elif(campus==4):
+                        ListadeOpciones(salones,cursos,cursos_disp1,cursos_disp2,cursos_disp3)
+                elif(campus==5):
+                        Salir()
+                else:
+                        print(" \n <<<<<<  La opción es Incorrecta  >>>>> \n ")
+                        Buscarsalones()
+        except(ValueError):
                 print(" \n <<<<<<  La opción es Incorrecta  >>>>> \n ")
                 Buscarsalones()
 
@@ -121,26 +125,30 @@ def Asesorias():
 
 
 def Objetos():
-        print(" \n ------- Objetos Perdidos: -------\n")
-        p=int(input("1.-Reportar objeto encontrado \n"+
-        "2.-Ver objetos reportados \n "
-        + "Ingrese la opción ----->"))
-        if(p==1):
-                f = open('objetos.txt','a')
-                p=str(input(" \n Tipo de objeto encontrado: ")).strip()
-                print("<<<< Especifique: >>>>>")
-                q=str(input("- Color: \n ")).strip()
-                r=str(input("- Marca: \n ")).strip()
-                f.writelines('\n' + " **** "+p+" ****" +'\n'+ "- Color: " + q + '\n'+ "- Marca: "+r)
-                f.close()
-                Regresar()
+        try:
+                print(" \n ------- Objetos Perdidos: -------\n")
+                p=int(input("1.-Reportar objeto encontrado \n"+
+                "2.-Ver objetos reportados \n "
+                + "Ingrese la opción ----->"))
+                if(p==1):
+                        f = open('objetos.txt','a')
+                        p=str(input(" \n Tipo de objeto encontrado: ")).strip()
+                        print("<<<< Especifique: >>>>>")
+                        q=str(input("- Color: \n ")).strip()
+                        r=str(input("- Marca: \n ")).strip()
+                        f.writelines('\n' + " **** "+p+" ****" +'\n'+ "- Color: " + q + '\n'+ "- Marca: "+r)
+                        f.close()
+                        Regresar()
 
-        elif(p==2):
-                f = open('objetos.txt','r')
-                mensaje = f.read()
-                print(mensaje)
-                f.close
-                Regresar()
+                elif(p==2):
+                        f = open('objetos.txt','r')
+                        mensaje = f.read()
+                        print(mensaje)
+                        f.close
+                        Regresar()
+        except(ValueError):
+                print(" <<<<<<<<< Opción Incorrecta >>>>>>>> ")
+                Objetos()
                 
         
         # Aqui copia y pega tu parte Luis Fernando
