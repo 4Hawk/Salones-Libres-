@@ -27,9 +27,9 @@ def Todo():
 def ListadeOpciones(salones,cursos,cursos_disp1,cursos_disp2,cursos_disp3):
         print("\n -------------------- Bienvenido(a) a FreeClassRoom ----------------------- \n")
         opcion = int(input(" \n ¿ Qué desea hacer ? \n\n"+
-        "1-Buscar salones Disponibles \n" +
+        "1.-Buscar salones Disponibles \n" +
         "2.-Buscar Asesorías Disponibles \n"+
-        "3.-Reportar o Revisar objetos perdidos \n"+
+        "3.-Reportar objetos encontrados y/o Revisar objetos perdidos \n"+
         "4.-Salir \n"+
         " Ingrese la opción----->"))
         if(opcion==1):
@@ -121,13 +121,17 @@ def Asesorias():
 
 
 def Objetos():
-        print("Objetos Perdidos: \n")
-        p=int(input("1.-Reportar objeto perdido \n"+
-        "2.-Ver objetos encontrados \n"))
+        print(" \n ------- Objetos Perdidos: -------\n")
+        p=int(input("1.-Reportar objeto encontrado \n"+
+        "2.-Ver objetos reportados \n "
+        + "Ingrese la opción ----->"))
         if(p==1):
                 f = open('objetos.txt','a')
-                p=str(input("Reportar objeto perdido: "))
-                f.writelines('\n'+p)
+                p=str(input(" \n Tipo de objeto encontrado: ")).strip()
+                print("<<<< Especifique: >>>>>")
+                q=str(input("- Color: \n ")).strip()
+                r=str(input("- Marca: \n ")).strip()
+                f.writelines('\n' + " **** "+p+" ****" +'\n'+ "- Color: " + q + '\n'+ "- Marca: "+r)
                 f.close()
                 Regresar()
 

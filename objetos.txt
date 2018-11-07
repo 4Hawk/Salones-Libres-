@@ -1,5 +1,9 @@
 
-Cartuchera
-Hoja
-dasds
-un lapiz
+      ------    Lista de Objetos Reportados    ------
+
+ **** Lapiz ****
+- Color: Blanco
+- Marca: Mongol
+ **** Mouse ****
+- Color: Azul
+- Marca: Login

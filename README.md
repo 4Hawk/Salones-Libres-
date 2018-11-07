@@ -2,25 +2,16 @@
 
 Programa para buscar salones disponibles
 
-## Integrantes:
+## Desarrolladores:
+
 * Flores Cuenca, Luis Fernando
 * Rivera Acacio, Shamil
 * Quispe Hurtado, Juan Pablo
 
-## Funcionalidades 
 
-* Identificación del Usuario (Base de datos creada)
-    * Ingrese su código de estudiante:
-    * Ingrese su contraseña:
-* Encontrar salones disponibles para estudiar. Para ello realizaremos las siguientes preguntas
-    * ¿En qué campus deseas encontrar salones disponibles?
-        * ¿Qué pabellón?
-        * ¿Qué horario?
-* Asesorías disponibles (Profesores dispuestos a enseñar en sus tiempos libres dentro de la universidad, pero no solicitados en INFOSIL)
-    * ¿Qué curso deseas reforzar? (Entregar información del profesor)
-* Objetos perdidos (Reportar y Verificar)
-    * Reportar objeto perdido:
-    * Verificar objetos Reportados
+## Funcionalidad del Programa
+
+El programa FreeClassRoom tiene como enfoque principal ayudar a los alumnos de cierta universidad a ubicar salones disponibles para estudiar.Asimismo, cuenta con 2 opciones adicionales que son las asesorías hechas por profesores sin fines de lucro y la busqueda de objetos perdidos en los salones a los que asiste.
 
 ## Tiempo para desarrollarlo (Estimación):
     Dos semanas (14 días)     
