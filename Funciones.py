@@ -128,7 +128,31 @@ def Asesorias():
 # Funcion Buscar Objetos Perdidos
 
 
+def Objetos():
+        try:
+                print(" \n ------- Objetos Perdidos: -------\n")
+                p=int(input("1.-Reportar objeto encontrado \n"+
+                "2.-Ver objetos reportados \n "
+                + "Ingrese la opción ----->"))
+                if(p==1):
+                        f = open('objetos.txt','a')
+                        p=str(input(" \n Tipo de objeto encontrado: ")).strip()
+                        print("<<<< Especifique: >>>>>")
+                        q=str(input("- Color: \n ")).strip()
+                        r=str(input("- Marca: \n ")).strip()
+                        f.writelines('\n' + " **** "+p+" ****" +'\n'+ "- Color: " + q + '\n'+ "- Marca: "+r)
+                        f.close()
+                        Regresar()
 
+                elif(p==2):
+                        f = open('objetos.txt','r')
+                        mensaje = f.read()
+                        print(mensaje)
+                        f.close
+                        Regresar()
+        except(ValueError):
+                print(" \n <<<<<<<<< Opción Incorrecta >>>>>>>> ")
+                Objetos()
                 
         
         # Aqui copia y pega tu parte Luis Fernando
