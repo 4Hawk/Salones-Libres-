@@ -23,9 +23,9 @@ Antes de iniciar la instalación el Usuario debe tener instalado los siguientes 
 
 ### Pasos a seguir:
 
-1.- Descargar el archivo ZIP de Infosil.
-2.- Extraer los archivos de la carpeta FreeClassRoom.zip.
-3.- Verificar el archivo Identificación_del_Usuario.py , ya que este es el unico archivo con el cual se puede ejecutar el programa.
+1. Descargar el archivo ZIP de Infosil.
+2. Extraer los archivos de la carpeta FreeClassRoom.zip.
+3. Verificar el archivo Identificación_del_Usuario.py , ya que este es el unico archivo con el cual se puede ejecutar el programa.
 
 
 * Observación adicional: Este programa funciona con cualquier IDE que trabaje con el lenguaje de programación Python
