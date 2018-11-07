@@ -16,16 +16,16 @@ El programa FreeClassRoom tiene como enfoque principal ayudar a los alumnos de l
 
 ## Manual de Instalación y Uso
 
-Antes de iniciar la instalación el Usuario debe tener instalado los siguientes programas
+Antes de iniciar la instalación el Usuario debe tener instalado los siguientes programas:
 
 * Descargar la versión 3.6.0 de Python (64 bit)
 * Tener un Descomprimidor de Archivos .zip
 
 ### Pasos a seguir:
 
-* 1.- Descargar el archivo ZIP de Infosil.
-* 2.- Extraer los archivos de la carpeta FreeClassRoom.zip.
-* 3.- Verificar el archivo Identificación_del_Usuario.py , ya que este es el unico archivo con el cual se puede ejecutar el programa.
+1.- Descargar el archivo ZIP de Infosil.
+2.- Extraer los archivos de la carpeta FreeClassRoom.zip.
+3.- Verificar el archivo Identificación_del_Usuario.py , ya que este es el unico archivo con el cual se puede ejecutar el programa.
 
 
 * Observación adicional: Este programa funciona con cualquier IDE que trabaje con el lenguaje de programación Python
