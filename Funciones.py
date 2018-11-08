@@ -6,6 +6,9 @@ from Base_de_Datos import *
 
 
 def Todo():
+        hora_actual= datetime.now()
+        hora_actual = time(hora_actual.hour, hora_actual.minute, hora_actual.second)
+        print(hora_actual)
         print("                     INICIAR SESIÓN" )           
         codigo = input(" Ingrese su código de Estudiante-----> ").strip()
         validar = codigo in datos1
@@ -18,13 +21,13 @@ def Todo():
                 while(obtain!=contraseña):
                         contraseña = input(" Ingrese su contraseña-------> ").strip()
                 else:
-                        ListadeOpciones(salones,cursos,cursos_disp1,cursos_disp2,cursos_disp3)
+                        ListadeOpciones(cursos,cursos_disp1,cursos_disp2,cursos_disp3)
 
 
                                                 # Función Media
 
 
-def ListadeOpciones(salones,cursos,cursos_disp1,cursos_disp2,cursos_disp3):
+def ListadeOpciones(cursos,cursos_disp1,cursos_disp2,cursos_disp3):
         try:
                 print("\n -------------------- Bienvenido(a) a FreeClassRoom ----------------------- \n")
                 opcion = input(" \n ¿ Qué desea hacer ? \n\n"+
@@ -44,10 +47,10 @@ def ListadeOpciones(salones,cursos,cursos_disp1,cursos_disp2,cursos_disp3):
                         Salir()
                 else:
                         print("\n <<<<<<  La opción es Incorrecta  >>>>> \n")  
-                        ListadeOpciones(salones,cursos,cursos_disp1,cursos_disp2,cursos_disp3)  
+                        ListadeOpciones(cursos,cursos_disp1,cursos_disp2,cursos_disp3)  
         except(ValueError):
                 print("\n <<<<<<  La opción es Incorrecta  >>>>> \n")  
-                ListadeOpciones(salones,cursos,cursos_disp1,cursos_disp2,cursos_disp3) 
+                ListadeOpciones(cursos,cursos_disp1,cursos_disp2,cursos_disp3) 
 
 
                                                 # Funciones Cola
@@ -65,24 +68,43 @@ def Buscarsalones():
                         " Ingrese la opción  ----->"))
 
                 if(campus==1):
-                        pabellon = Pabellon()
-                        print("\n Los salones disponibles son:")
-                        Buscador(salones,campus,pabellon)
+                        tiempo()
+                        sincronizar1()
+                        sincronizar2()
+                        sincronizar3()
+                        sincronizar4()
+                        sincronizar5()
+                        sincronizar6()
+                        sincronizar7()
+                        sincronizar8()
                         Regresar()
                                         
                 elif(campus == 2):
-                        pabellon = Pabellon()
-                        print("\n Los salones disponibles son:")
-                        Buscador(salones,campus,pabellon)
+                        tiempo()
+                        sincronizar11()
+                        sincronizar22()
+                        sincronizar33()
+                        sincronizar44()
+                        sincronizar55()
+                        sincronizar66()
+                        sincronizar77()
+                        sincronizar88()
                         Regresar()
 
                 elif(campus == 3):
-                        pabellon = Pabellon()
-                        print("\n Los salones disponibles son:")
-                        Buscador(salones,campus,pabellon)
+                        tiempo()
+                        sincronizar11()
+                        sincronizar22()
+                        sincronizar33()
+                        sincronizar44()
+                        sincronizar55()
+                        sincronizar66()
+                        sincronizar77()
+                        sincronizar88()
                         Regresar()
+
                 elif(campus==4):
-                        ListadeOpciones(salones,cursos,cursos_disp1,cursos_disp2,cursos_disp3)
+                        ListadeOpciones(cursos,cursos_disp1,cursos_disp2,cursos_disp3)
                 elif(campus==5):
                         Salir()
                 else:
@@ -166,9 +188,12 @@ def Regresar():
         try:
                 volver = int(input(" \n Desea regresar al Menú principal \n 1.-Si \n 2.-No \n Ingrese la opción----->"))
                 if(volver == 1):
-                        return ListadeOpciones(salones,cursos,cursos_disp1,cursos_disp2,cursos_disp3)
-                else:
+                        return ListadeOpciones(cursos,cursos_disp1,cursos_disp2,cursos_disp3)
+                elif(volver==2):
                         print("\n ***********************Agradecemos su visita********************** ")
+                elif(volver!=1 or volver!=2):
+                        print("\n  <<<<<<< Opción Incorrecta  >>>>>>>")
+                        Regresar()
         except(ValueError):
                 print("\n  <<<<<<< Opción Incorrecta  >>>>>>>")
                 Regresar()
