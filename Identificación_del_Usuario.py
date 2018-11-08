@@ -4,13 +4,4 @@ from Funciones import Todo
 
 
                 # Aplicación
-Todo()
-
-
-
-
-
-            
-            
-
-      
+Todo()   

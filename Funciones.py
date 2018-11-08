@@ -1,7 +1,5 @@
 from Base_de_Datos import *
-
-
-
+from Funcion_sincronizarhorario import *
                                                 # Función Principal
 
 
@@ -237,5 +235,3 @@ def BuscadorCampus(curso,lista):
     print("\n  **** Horarios: ****")
     for e in Horarios:
         print(e)                
-
-
