@@ -1,5 +1,5 @@
 from Base_de_Datos import *
-from Funcion_sincronizarhorario import *
+
                                                 # Función Principal
 
 
@@ -67,38 +67,38 @@ def Buscarsalones():
 
                 if(campus==1):
                         tiempo()
-                        sincronizar1()
-                        sincronizar2()
-                        sincronizar3()
-                        sincronizar4()
-                        sincronizar5()
-                        sincronizar6()
-                        sincronizar7()
-                        sincronizar8()
+                        sincronizar(h1,hora_inicio1,hora_finalizacion1)
+                        sincronizar(h2,hora_inicio2,hora_finalizacion2)
+                        sincronizar(h3,hora_inicio3,hora_finalizacion3)
+                        sincronizar(h4,hora_inicio4,hora_finalizacion4)
+                        sincronizar(h5,hora_inicio5,hora_finalizacion5)
+                        sincronizar(h6,hora_inicio6,hora_finalizacion6)
+                        sincronizar(h7,hora_inicio7,hora_finalizacion7)
+                        sincronizar(h8,hora_inicio8,hora_finalizacion8)
                         Regresar()
                                         
                 elif(campus == 2):
                         tiempo()
-                        sincronizar11()
-                        sincronizar22()
-                        sincronizar33()
-                        sincronizar44()
-                        sincronizar55()
-                        sincronizar66()
-                        sincronizar77()
-                        sincronizar88()
+                        sincronizar(h11,hora_inicio1,hora_finalizacion1)
+                        sincronizar(h22,hora_inicio2,hora_finalizacion2)
+                        sincronizar(h33,hora_inicio3,hora_finalizacion3)
+                        sincronizar(h44,hora_inicio4,hora_finalizacion4)
+                        sincronizar(h55,hora_inicio5,hora_finalizacion5)
+                        sincronizar(h66,hora_inicio6,hora_finalizacion6)
+                        sincronizar(h77,hora_inicio7,hora_finalizacion7)
+                        sincronizar(h88,hora_inicio8,hora_finalizacion8)
                         Regresar()
 
                 elif(campus == 3):
                         tiempo()
-                        sincronizar11()
-                        sincronizar22()
-                        sincronizar33()
-                        sincronizar44()
-                        sincronizar55()
-                        sincronizar66()
-                        sincronizar77()
-                        sincronizar88()
+                        sincronizar(h111,hora_inicio1,hora_finalizacion1)
+                        sincronizar(h222,hora_inicio2,hora_finalizacion2)
+                        sincronizar(h333,hora_inicio3,hora_finalizacion3)
+                        sincronizar(h444,hora_inicio4,hora_finalizacion4)
+                        sincronizar(h555,hora_inicio5,hora_finalizacion5)
+                        sincronizar(h666,hora_inicio6,hora_finalizacion6)
+                        sincronizar(h777,hora_inicio7,hora_finalizacion7)
+                        sincronizar(h888,hora_inicio8,hora_finalizacion8)
                         Regresar()
 
                 elif(campus==4):
@@ -175,7 +175,7 @@ def Objetos():
                 Objetos()
                 
         
-        # Aqui copia y pega tu parte Luis Fernando
+        
 
                                         # Funciones de Soporte
 
@@ -235,3 +235,22 @@ def BuscadorCampus(curso,lista):
     print("\n  **** Horarios: ****")
     for e in Horarios:
         print(e)                
+
+
+# Código Reducido de Luis
+
+def sincronizar(lista,hora_inicio,hora_fin):
+    actual = datetime.now()
+    actual = time(actual.hour, actual.minute,actual.second)  # este objeto se puede comparar sin tener en cuenta la fecha
+    for i in lista:
+        if actual > hora_inicio and actual < hora_fin:
+            print(" - "+str(i))
+        else:
+            break
+
+def tiempo():
+    hora_actual= datetime.now()
+    hora_actual = time(hora_actual.hour, hora_actual.minute, hora_actual.second)
+    print(" \n -------------------- La Hora Actual es: ------------------ ")
+    print("                          "+"|"+str(hora_actual)+"|")
+    print("  \n * * * * * *  Lista de salones libres a ésta hora(por pabellones):  * * * * * * * \n")

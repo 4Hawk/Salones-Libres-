@@ -1,5 +1,8 @@
-from Base_de_Datos import *
+#from Base_de_Datos import *
 
+
+
+"""
 def sincronizar1():
     actual = datetime.now()
     actual = time(actual.hour, actual.minute,actual.second)  # este objeto se puede comparar sin tener en cuenta la fecha
@@ -26,7 +29,10 @@ def sincronizar111():
             print(i)
         else:
             break
+"""
 
+
+"""
 def sincronizar2():
     actual = datetime.now()
     actual = time(actual.hour, actual.minute,actual.second)  # este objeto se puede comparar sin tener en cuenta la fecha
@@ -53,7 +59,11 @@ def sincronizar222():
             print(i)
         else:
             break
+"""
 
+
+
+"""
 def sincronizar3():
     actual = datetime.now()
     actual = time(actual.hour, actual.minute,actual.second)  # este objeto se puede comparar sin tener en cuenta la fecha
@@ -80,7 +90,11 @@ def sincronizar333():
             print(i)
         else:
             break
+"""
 
+
+
+"""
 def sincronizar4():
     actual = datetime.now()
     actual = time(actual.hour, actual.minute,actual.second)  # este objeto se puede comparar sin tener en cuenta la fecha
@@ -106,7 +120,12 @@ def sincronizar444():
             print(i)
         else:
             break
+"""
 
+
+
+
+"""
 def sincronizar5():
     actual = datetime.now()
     actual = time(actual.hour, actual.minute,actual.second)  # este objeto se puede comparar sin tener en cuenta la fecha
@@ -133,7 +152,10 @@ def sincronizar555():
             print(i)
         else:
             break
+"""
 
+
+"""
 def sincronizar6():
     actual = datetime.now()
     actual = time(actual.hour, actual.minute,actual.second)  # este objeto se puede comparar sin tener en cuenta la fecha
@@ -160,8 +182,10 @@ def sincronizar666():
             print(i)
         else:
             break
+"""
 
 
+"""
 def sincronizar7():
     actual = datetime.now()
     actual = time(actual.hour, actual.minute,actual.second)  # este objeto se puede comparar sin tener en cuenta la fecha
@@ -188,6 +212,15 @@ def sincronizar777():
             print(i)
         else:
             break
+"""
+
+
+
+
+
+
+"""
+
 
 def sincronizar8():
     actual = datetime.now()
@@ -216,9 +249,8 @@ def sincronizar888():
         else:
             break
 
-def tiempo():
-    hora_actual= datetime.now()
-    hora_actual = time(hora_actual.hour, hora_actual.minute, hora_actual.second)
-    print("son las: ")
-    print(hora_actual)
-    print("Lista de salones libres a ésta hora por pabellones: ")
+
+
+
+"""
+

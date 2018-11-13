@@ -7,63 +7,74 @@ datos1 = {"1811854":"JavierIn34","17035465":"MariaRojas123","16042341":"Peru123"
 "13094354":"Usiperu","15051243":"easy","17114354":"password","11112222":"estudiante","12":"12"}
                                    
                                      #  Base de Datos de los Salones Disponibles
+
+
          # Horario 1
-hora_inicio1 = time(7,0,0)         # siete de la mañana
+hora_inicio1 = time(7,0,0)         # Siete de la mañana
 hora_finalizacion1 = time(9,0,0)   # nueve de la mañana
 h1 =["A307","B406","D302"]         # Campus 1
 h11 =["A307","B406","D302"]        # Campus 2
 h111 =["A307","B406","D302"]       # Campus 7
 
          # Horario 2
-hora_inicio2 = time(9,0,0)        # nueve de la mañana
+
+hora_inicio2 = time(9,0,0)        # Nueve de la mañana
 hora_finalizacion2 = time(11,0,0) # once de la mañana
 h2 =["A107","B406","D102"]        # Campus 1
 h22 =["A707","B506","A302"]       # Campus 2
 h222 =["A307","B406","D302"]      # Campus 7
 
        # Horario 3
-hora_inicio3 = time(11,0,0)        # once de la mañana
+hora_inicio3 = time(11,0,0)        # Once de la mañana
 hora_finalizacion3 = time(13,0,0)  # una de la tarde
 h3 =["A306","B206","D301"]        # Campus 1
 h33 =["B307","C406","D303"]       # Campus 2
 h333 =["A307","A406","D102"]      # Campus 7
 
        # Horario 4
-hora_inicio4 = time(13,0,0)        # una de la tarde
+
+hora_inicio4 = time(13,0,0)        # Una de la tarde
 hora_finalizacion4 = time(15,0,0)  # tres de la tarde
 h4 =["B107","C806","D702"]        # Campus 1
 h44 =["A107","B506","D502"]       # Campus 2
 h444=["B307","B106","D102"]      # Campus 7
 
        # Horario 5
-hora_inicio5 = time(15,0,0)         # tres de la tarde
+
+hora_inicio5 = time(15,0,0)         # Tres de la tarde
 hora_finalizacion5 = time(17,0,0)   # cinco de la tarde
 h5 =["B303","B506B","D102"]        # Campus 1
 h55 =["A407","C306","D202"]        # Campus 2
 h555 =["B507","B206","D102"]       # Campus 7
 
       # Horario 6
-hora_inicio6 = time(17,0,0)        # cinco de la tarde
-hora_finalizacion6 = time(19,0,0)  # siete de la noche
+
+hora_inicio6 = time(17,0,0)        # Cinco de la tarde
+hora_finalizacion6 = time(19,0,0)  # Siete de la noche
 h6 =["A304","C405","C302"]        # Campus 1
 h66 =["B307","B406","A302"]       # Campus 2
 h666 =["C303","B406","D302"]      # Campus 7
 
      # Horario 7
-hora_inicio7 = time(19,0,0)        # siete de la noche
-hora_finalizacion7 = time(21,0,0)  # nueve de la noche
+
+hora_inicio7 = time(19,0,0)        # Siete de la noche
+hora_finalizacion7 = time(21,0,0)  # Nueve de la noche
 h7 =["C207","B106","D302"]        # Campus 1
 h77 =["B308","B203","C102"]       # Campus 2
 h777 =["A107","B506","C301"]      # Campus 7
 
      # Horario 8
-hora_inicio8 = time(21,0,0)        # nueve de la noche
-hora_finalizacion8 = time(23,0,0)  # once de la noche
+
+hora_inicio8 = time(21,0,0)        # Nueve de la noche
+hora_finalizacion8 = time(23,0,0)  # Once de la noche
 h8 =["A103","C404","D102"]        # Campus 1
-h88 =["A205","B106","C305"]       # Campus 2
+h88 =["A205","B106","- C305"]       # Campus 2
 h888 =["B507","B403","C102"]      # Campus 7
-                                                            
+
+
+
                                     # Base de Datos de Asesorías Disponibles
+
 
 #Campus1
 cursos_disp1={}
