@@ -6,7 +6,7 @@ from Base_de_Datos import *
 def Todo():
         hora_actual= datetime.now()
         hora_actual = time(hora_actual.hour, hora_actual.minute, hora_actual.second)
-        print(hora_actual)
+        print("Hora de Ingreso:"+str(hora_actual))
         print("                         INICIAR SESIÓN" )           
         codigo = input(" Ingrese su código de Estudiante-----> ").strip()
         validar = codigo in datos1
