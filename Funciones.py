@@ -7,7 +7,7 @@ def Todo():
         hora_actual= datetime.now()
         hora_actual = time(hora_actual.hour, hora_actual.minute, hora_actual.second)
         print(hora_actual)
-        print("                     INICIAR SESIÓN" )           
+        print("                         INICIAR SESIÓN" )           
         codigo = input(" Ingrese su código de Estudiante-----> ").strip()
         validar = codigo in datos1
         while(validar==False):
@@ -124,26 +124,30 @@ def Asesorias():
                         print(str(contador)+".- " + i)
                         contador+=1
                 # Validación de la Búsqueda
-        reforzar = int(input(" \n ¿ Qué curso desea reforzar ? ------->"))
-        valor=cursosid[reforzar-1]
-        validarcursoreforzar = valor in cursosid
-        while(validarcursoreforzar==False):
-                reforzar = input(" \n <<< La opción que puso no existe >>>  \n ¿Qué curso desea a reforzar? ------->")
+        try:
+                reforzar = int(input(" \n ¿ Qué curso desea reforzar ? ------->"))
                 valor=cursosid[reforzar-1]
                 validarcursoreforzar = valor in cursosid
-        else:
-                validbusque = valor in cursos_disp1
-                if(validbusque==True):
-                        BuscadorCampus(valor,cursos_disp1)
-                        Regresar()
+                while(validarcursoreforzar==False):
+                        reforzar = input(" \n <<< La opción que puso no existe >>>  \n ¿Qué curso desea a reforzar? ------->")
+                        valor=cursosid[reforzar-1]
+                        validarcursoreforzar = valor in cursosid
                 else:
-                        validbusque = valor in cursos_disp2
+                        validbusque = valor in cursos_disp1
                         if(validbusque==True):
-                                BuscadorCampus(valor,cursos_disp2)
+                                BuscadorCampus(valor,cursos_disp1)
                                 Regresar()
                         else:
-                                BuscadorCampus(valor,cursos_disp3)
-                                Regresar()
+                                validbusque = valor in cursos_disp2
+                                if(validbusque==True):
+                                        BuscadorCampus(valor,cursos_disp2)
+                                        Regresar()
+                                else:
+                                        BuscadorCampus(valor,cursos_disp3)
+                                        Regresar()
+        except(IndexError,ValueError):
+                print("\n  <<<<<<< Opción Incorrecta  >>>>>>>")
+                Asesorias()
 
 # Funcion Buscar Objetos Perdidos
 
@@ -152,7 +156,8 @@ def Objetos():
         try:
                 print(" \n ------- Objetos Perdidos: -------\n")
                 p=int(input("1.-Reportar objeto encontrado \n"+
-                "2.-Ver objetos reportados \n "
+                "2.-Ver objetos reportados \n"+
+                "3.-Regresar \n "
                 + "Ingrese la opción ----->"))
                 if(p==1):
                         f = open('objetos.txt','a')
@@ -170,6 +175,8 @@ def Objetos():
                         print(mensaje)
                         f.close
                         Regresar()
+                elif(p==3):
+                        ListadeOpciones(cursos,cursos_disp1,cursos_disp2,cursos_disp3)
         except(ValueError):
                 print(" \n <<<<<<<<< Opción Incorrecta >>>>>>>> ")
                 Objetos()

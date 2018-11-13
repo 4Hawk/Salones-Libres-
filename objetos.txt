@@ -7,3 +7,13 @@
  **** Mouse ****
 - Color: Azul
 - Marca: Login
+
+ **** Mochila ****
+- Color: Blanco
+- Marca: Puma
+ **** Lonchera ****
+- Color: Negro
+- Marca: No tiene
+ **** Cartera ****
+- Color: Negra
+- Marca: Vuiton
